@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        /* Reset general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fondo claro */
+        body {
+            background: linear-gradient(to bottom, #f2f3f5, #e0e4e8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Caja principal */
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 400px;
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        /* Encabezado */
+        .login-container h1 {
+            color: #4a4a4a;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        /* Campos de entrada */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+        }
+
+        /* Botones */
+        .btn-success {
+            width: 100%;
+            padding: 10px;
+            background-color: #58c25d; /* Botón verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+
+        .login-button:hover {
+            background-color: #4ea24e;
+        }
+
+        .secondary-button {
+            background-color: transparent;
+            color: #007bff;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Pie de página */
+        .footer-text {
+            font-size: 0.85em;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .footer-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="login-container">
+        <h1>MAVEK<span style="color:#00b0ff;">®</span></h1>
+        <p class="subtitle">La tecnica al servicio de la patria</p>
+        
+        <h2>Ingresa el tipo de Usuario</h2>
+
+        <!-- Campos de entrada -->
+        
+        <!-- Botones -->
+        <button type="button" class="btn btn-success" onclick="window.location.href='LogginA.html'">Alumno</button>
+        <button type="button" class="btn btn-success" onclick="window.location.href='LogginD.html'">Docente</button>
+        <button type="button" class="btn btn-success" onclick="window.location.href='LogginP.html'">Administrador</button>
+
+
+
+        <button class="secondary-button"><a href="HomePage.html">VOLVER</a></button>
+        
+        <!-- Pie de página -->
+        <p class="footer-text">
+            ¿Olvido su contraseña? <a href="#">Contacte con HELP-DESK</a>
+            <i> 2024 MAVEK | Todos los derechos reservados ®</i>
+        </p>
+    </div>
+</body>
+
+
+</html>
